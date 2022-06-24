@@ -126,7 +126,7 @@ rule download_data:
         S3.remote(prefix + "download/CLIN_sample.txt"),
         S3.remote(prefix + "download/SNV.txt.gz"),
         S3.remote(prefix + "download/gistic/all_thresholded.by_genes.txt.gz"),
-        S3.remote(prefix + "download/CNA_seg.txt.gz"
+        S3.remote(prefix + "download/CNA_seg.txt.gz")
     resources:
         mem_mb=2000
     shell:
